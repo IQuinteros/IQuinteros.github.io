@@ -1,4 +1,157 @@
-<h1>IQuinteros GitHub Page</h1>
-<p>Creado en el curso de Git y GitHub de Platzi</p>
-<p><img src="https://i.imgur.com/wImWGfs.jpg"/></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Ignacio Quinteros Fuentes 2020 -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Quinteros</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/a12b0cdc6e.js" crossorigin="anonymous"></script>
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
+
+</head>
+<body class="avoid-scroll">
+    <header class="header">
+        <h1 class="welcome">Hola!</h1>
+
+        <h1 class="header__title">Soy Ignacio Alexis Quinteros Fuentes</h1>
+        <h3 class="header__subtitle">Estudiante de Ingeniería Informática</h3>
+    </header>
+
+    <main class="main">
+        <section class="section cover">
+            <picture class="cover__profile">
+                <source media="(min-width: 768px)" srcset="assets/images/profile/profile.png">
+                <img src="assets/images/profile/profile_small.png" alt="Profile">
+            </picture>
+
+            <div class="skills__container">
+
+                <div class="skill skill--web">
+                    <i class="fas fa-desktop skill__icon"></i>
+                    <p class="skill__title">Desarrollo web</p>
+                    <div class="skill__content">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill skill--mobile">
+                    <i class="fas fa-mobile-alt skill__icon"></i>
+                    <p class="skill__title">Desarrollo móvil</p>
+                    <div class="skill__content">
+                        <ul>
+                            <li>FLUTTER</li>
+                            <li>BLOC</li>
+                            <li>FIREBASE</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section portfolio">
+            <h1 class="section__title">Portafolio</h1>
+
+            <div id="portfolio-container" class="portfolio__container">
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/acredify.png');" onclick="openURL('https://zeakservices.com/software/projects/acredify/')">
+                    <h3 class="portfolio__item__title">Acredify</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, JS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/movies.png');" onclick="openURL('https://zeakservices.com/software/projects/movies/')">
+                    <h3 class="portfolio__item__title">Movi.es</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, JS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div> 
+                <div class="portfolio__item col-2-tb" style="background-image: url('/assets/images/portfolio/cityviewer.png');" onclick="openURL('https://zeakservices.com/software/projects/cityviewer/')">
+                    <h3 class="portfolio__item__title">CityViewer</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, JS, JQUERY, PHP, MYSQL, API</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+            </div>
+
+            <button id="more-btn" class="more__btn" onclick="moreClicked()">
+                <span id="more-text" class="more__text">Ver más</span>
+                <i id="more-icon" class="fas fa-angle-down more__icon"></i>
+            </button>
+
+            <div id="more-content" class="more__content">
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/pricing.png');" onclick="openURL('https://zeakservices.com/software/projects/pricing/')">
+                    <h3 class="portfolio__item__title">Pricing Cards</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/science.png');" onclick="openURL('https://zeakservices.com/software/projects/science/')">
+                    <h3 class="portfolio__item__title">Science</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, PYTHON, DJANGO</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/sii.png');" onclick="openURL('https://zeakservices.com/software/projects/sii/')">
+                    <h3 class="portfolio__item__title">SII</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, JS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/social.png');" onclick="openURL('https://zeakservices.com/software/projects/social/site/')">
+                    <h3 class="portfolio__item__title">Social</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/video.png');" onclick="openURL('https://zeakservices.com/software/projects/platzivideo/')">
+                    <h3 class="portfolio__item__title">PlatziVideo</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/zeak.png');" onclick="openURL('https://zeakservices.com/')">
+                    <h3 class="portfolio__item__title">ZeakServices</h3>
+                    <p class="portfolio__item__subtitle">HTML5, CSS, JS, PWA</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+            </div>
+
+            <div class="section__background"></div>
+        </section>
+
+        <section class="section studies">
+            <h1 class="section__title">Estudios</h1>
+            <picture class="studies__item">
+                <img src="assets/images/inacap.png" alt="Inacap">
+            </picture>
+            <picture class="studies__item">
+                <img src="assets/images/platzi.png" alt="Platzi">
+            </picture>
+            <picture class="studies__item">
+                <img src="assets/images/udemy.svg" alt="Udemy">
+            </picture>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Ignacio Quinteros - 2020</p>
+    </footer>
+
+    <div class="header__background"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

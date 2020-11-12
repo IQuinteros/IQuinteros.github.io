@@ -1,0 +1,29 @@
+@use 'style'
+body
+    background-color: style.$dark-color
+
+// Common
+.col-2-tb
+    grid-column: span 1
+
+body
+    background-color: style.$darker-color
+
+.body__background
+    @include style.background(-10)
+    background-image: url('../assets/images/nb_medium.jpg')
+    position: fixed
+    
+.portfolio__container,
+.more__content
+    grid-template-columns: 1fr 1fr 1fr
+.more__content,
+.more__btn
+    grid-column: span 3
+.section.studies
+    grid-template-columns: 1fr 1fr 1fr
+.section.studies > .section__title
+    grid-column: span 3
+.main
+    background-color: style.$dark-light-color
+    box-shadow: 4px 0 6px rgba(0, 0, 0, .5), -4px 0 6px rgba(0, 0, 0, .5)

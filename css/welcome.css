@@ -1,0 +1,46 @@
+.avoid-scroll {
+  touch-action: none;
+  overflow: hidden;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 6rem;
+  opacity: 0;
+  font-weight: lighter;
+  animation: rotateInDownRight 2s 0.5s forwards, header-normal 2s 2s forwards ease;
+}
+
+.header__title {
+  opacity: 0;
+  animation: header-text 0.5s 3s forwards;
+}
+
+.header__subtitle {
+  opacity: 0;
+  animation: header-text 0.5s 3s forwards;
+}
+
+@keyframes header-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes header-normal {
+  0% {
+    min-height: 100vh;
+    font-size: 6rem;
+  }
+  100% {
+    min-height: 100px;
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=welcome.css.map */

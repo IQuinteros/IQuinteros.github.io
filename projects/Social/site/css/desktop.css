@@ -1,0 +1,111 @@
+/* Ignacio Quinteros Fuentes */
+
+body{
+    background-color: var(--neutral);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main{
+    background-color: var(--white);
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: calc(var(--normal-spacing) * 3);
+
+    align-items: center;
+
+    padding: calc(var(--normal-spacing) * 5) calc(var(--normal-spacing) * 3);
+
+    position: relative;
+
+    max-width: 1440px;
+    height: 800px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .25);
+}
+
+/* Background */
+.bg__pattern--top{
+    width: auto;
+}
+
+.bg__pattern--bottom{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cover{
+    margin-right: calc(var(--normal-spacing));
+}
+
+.cover > h1{
+    text-align: start;
+    font-size: 4rem;
+}
+
+.cover > p{
+    text-align: start;
+    font-size: 1.8rem;
+}
+
+.rating{
+    justify-items: end;
+}
+
+.card{
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .25);
+    z-index: 2;
+    border: 1px solid var(--primary);
+}
+
+.card--rating{
+    width: 80%;
+    padding: calc(var(--normal-spacing) / 1.5);
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card--rating.card-1{
+    right: calc(var(--normal-spacing) * 4);
+}
+
+.card--rating.card-2{
+    right: calc(var(--normal-spacing) * 2);
+}
+
+.container--stars{
+    margin-bottom: 0;
+}
+
+.comments{
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card--comment{
+    padding: calc(var(--normal-spacing) * 1.5);
+}
+
+.card--comment.card-2{
+    top: calc(var(--normal-spacing) / 2);
+}
+
+.card--comment.card-3{
+    top: calc(var(--normal-spacing));
+}

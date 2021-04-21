@@ -1,0 +1,58 @@
+/*  Ignacio Quinteros Fuentes 2020 */
+
+/* General */
+
+.expanded{
+    display: none;
+}
+
+/* Header */
+
+.header__user > p{
+    display: none;
+}
+
+.header__user--img{
+    margin: 0 0 0 auto;
+}
+
+.header__user--arrow{
+    margin: 0 0 0 10px;
+}
+
+/* Header Menu */
+.header__menu{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/* Aside */
+
+.aside{
+    justify-content: space-around;
+}
+
+.aside__button > div > img{
+    width: 20px;
+    height: 20px;
+}
+
+.aside__button > div > span{
+    color: white;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+
+/* Main Content */
+
+.main{
+    margin-bottom: 50px;
+}
+
+.movie{
+    min-width: 100%;
+    max-width: 100%;
+}

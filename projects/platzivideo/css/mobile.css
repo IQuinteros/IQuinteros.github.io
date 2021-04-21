@@ -1,0 +1,17 @@
+/* Ignacio Quinteros Fuentes 2020 */
+
+.add-to-playlist{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.share{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.save{
+    width: 50%;
+    margin-bottom: 20px;
+}

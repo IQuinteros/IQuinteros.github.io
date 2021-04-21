@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Ignacio Quinteros Fuentes -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movi.es</title>
+
+    <link href=“https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap” rel=“stylesheet”>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/anim.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 460px)">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="images/popcorn.svg" alt="">
+                <span>Movi.es</span>
+            </div>
+            <form class="header__search" action="#">
+                <input class="header__search--input" type="text" placeholder="Busca tu peli, actor, actriz o director favorito" name="sr">
+            </form>
+            <div class="header__user">
+                <p>Bambi Rodríguez</p>
+                <a class="header__user--img" href="#"><img src="images/bambi.png" alt=""></a>
+                <a href="#" id="header__arrow" class="header__user--arrow" onclick="menu_pressed()"></a>
+            </div>
+            <nav id="header__menu" class="header__menu close">
+                <ul>
+                    <li><a href="#">Ver Perfil</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="aside">
+            <a href="#" class="aside__button">
+                <div>
+                    <img src="images/home.svg" alt="">
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="#" class="aside__button">
+                <div>
+                    <img src="images/trending.svg" alt="">
+                    <span>Trending</span>
+                </div>
+            </a>
+            <a href="#" class="aside__button">
+                <div>
+                    <img src="images/like.svg" alt="">
+                    <span>Más likes</span>
+                </div>
+            </a>
+            <div class="expanded"></div>
+            <a href="#" class="aside__button last__button">
+                <div>
+                    <img src="images/settings.svg" alt="">
+                    <span>Ajustes</span>
+                </div>
+            </a>
+        </aside>
+        <main class="main">
+            <section class="section">
+                <h2>Ahora en el Cine</h2>
+                <div class="section__list">
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/1" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/2" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/3" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/4" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="section">
+                <h2>Aclamadas por la crítica</h2>
+                <div class="section__list">
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/5" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/6" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/7" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/8" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/9" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="section">
+                <h2>No te debes perder</h2>
+                <div class="section__list">
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/10" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/11" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/12" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="movie" href="#">
+                        <div>
+                            <div class="movie__image">
+                                <div class="loader"></div>
+                                <img src="https://source.unsplash.com/random/13" alt="">
+                            </div>
+                            <div class="movie__description">
+                                <h2>The Secret Life of Pets</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eaque. Deserunt eos delectus suscipit modi distinctio nihil numquam non quos ipsa blanditiis provident aliquid eveniet sed, similique quidem recusandae qui.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

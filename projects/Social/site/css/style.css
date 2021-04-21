@@ -1,0 +1,165 @@
+/* Ignacio Quinteros Fuentes */
+
+:root{
+    /* Colors */
+
+    /* Primary */
+    --primary-dark: hsl(300, 43%, 22%);
+    --primary: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --neutral-dark: hsl(303, 10%, 53%);
+    --neutral: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Spacing */
+
+    --normal-spacing: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.main{
+    padding: var(--normal-spacing);
+    padding-top: calc(var(--normal-spacing) * 2);
+
+    display: grid;
+}
+
+/* Background */
+.bg__pattern--top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.bg__pattern--bottom{
+    display: none;
+}
+
+/* Sections grid */
+.section__grid{
+    display: grid;
+    gap: var(--normal-spacing);
+}
+
+/* Cover */
+
+.cover{
+    margin-bottom: var(--normal-spacing);
+}
+
+.cover > h1{
+    color: var(--primary-dark);
+    margin-bottom: var(--normal-spacing);
+    font-size: 2.5rem;
+
+    animation: backInLeft 2s;
+}
+
+.cover > p{
+    color: var(--neutral-dark);
+    text-align: center;
+    font-size: 1.2rem;
+
+    opacity: 0;
+
+    animation: fadeInUp 2s 2s forwards;
+}
+
+/* Card */
+.card{
+    padding: calc(var(--normal-spacing) / 2) var(--normal-spacing);
+    border-radius: calc(var(--normal-spacing) / 2);
+    position: relative;
+}
+
+/* Rating */
+.rating{
+    margin-bottom: calc(var(--normal-spacing) * 2);
+}
+
+.card--rating{
+    background-color: var(--neutral);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    font-size: 1.2rem;
+}
+
+.card--rating > h4{
+    color: var(--primary-dark);
+}
+
+.container--stars{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px;
+    grid-template-rows: 15px;
+
+    gap: calc(var(--normal-spacing) / 4);
+
+    margin-bottom: calc(var(--normal-spacing) / 2);
+}
+
+.star{
+    background-image: url('../../images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.star:hover{
+    animation: jello 2s;
+}
+
+/* Comments */
+.card--comment{
+    padding-top: var(--normal-spacing);
+    padding-bottom: var(--normal-spacing);
+    background-color: var(--primary-dark);
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.card__profile{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 15px 15px;
+    column-gap: var(--normal-spacing);
+    align-items: center;
+
+    margin-bottom: var(--normal-spacing);
+    padding: var(--normal-spacing) 0;
+}
+
+.card__profile > img{
+    width: 100%;
+    border-radius: 50%;
+    grid-row: span 2;
+}
+
+.card__profile > span{
+    color: var(--primary);
+}
+
+.author{
+    padding: 20px 0;
+}
+

@@ -1,0 +1,45 @@
+h2{
+    font-size: 3rem;
+}
+
+.main{
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.view-main__img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    object-position: center;
+    max-height: 400px;
+    opacity: 0;
+
+    animation: 1s ease-out 0.5s 1 onAppear forwards;
+}
+.view-main__img > img{    
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.dynamic{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.view__img{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.view__ref{
+    display: block;
+    font-size: 1.8rem;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .dynamic{
+        grid-template-columns: 1fr;
+    }
+}

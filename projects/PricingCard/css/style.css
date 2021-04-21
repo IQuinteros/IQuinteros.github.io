@@ -1,0 +1,205 @@
+:root{
+    --title-color:#0EB1D2;
+    --background-color: #2B4141;
+    --card-color: #F7FFF7;
+    --selected-color: #EA526F;
+    --accent-color: #EA526F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+.content{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+.space{
+    flex-grow: 1;
+}
+
+.title{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     height: 350px;
+     padding: 20px;
+     background-color: var(--title-color);
+}
+.title h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    color: white;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Cards */
+
+.cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 80px;
+}
+
+.card--a{
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+}
+.card{
+    box-shadow: 3px 3px 3px rgba(1, 1, 1, .2);
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
+    transition: transform 0.2s, margin 0.2s;
+}
+.card__title--line{
+    width: 50%;
+    height: 20px;
+    background-color: var(--accent-color);
+    box-shadow: 3px 3px 3px  rgba(1, 1, 1, .2);
+    border-radius: 20px;
+    position: relative;
+    bottom: 10px;
+}
+.card__title{
+    margin-top: 20px;
+    font-size: 2rem;
+    height: 50px;
+    color: black;
+    letter-spacing: 1px;
+}
+.card__line{
+    width: 50%;
+    height: 1px;
+    border: none;
+    border-top: 1px gray solid;
+}
+.card__price{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.card__price--first{
+    position: relative;
+    bottom: 25%;
+}
+.card__price--last{
+    position: relative;
+    top: 25%;
+}
+.card__price > span{
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+.card__price > h1{
+    display: inline;
+    font-size: 8rem;
+    margin: 0 20px;
+    color: var(--title-color);
+}
+.card__price > .card__price--first{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.card__price > .card__price--last{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.card__description{
+    flex-grow: 1;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    color: gray;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2);
+}
+.card__space{
+    flex-grow: 1;
+}
+.card__button{
+    transition: 0.2s;
+    background-color: var(--title-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    height: 40px;
+    width: 50%;
+    top: 20px;
+    box-shadow: 3px 3px 3px rgba(1, 1, 1, .2);
+}
+.card__button > h2{
+    color: white;
+    text-align: center;
+}
+.card__button > h2::after{
+    content: "ORDER NOW";
+}
+
+.card:target{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px  rgba(1, 1, 1, .8);
+}
+.card:target > .card__button{
+    background-color: var(--selected-color);
+}
+.card:target > .card__button > h2::after{
+    content: "SELECTED";
+}
+.card:target > .card__button{
+    box-shadow: 3px 3px 8px  rgba(1, 1, 1, .8);
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer > span{
+    color: var(--card-color);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 500px){
+    .title h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .title h1{
+        font-size: 5rem;
+    }
+}

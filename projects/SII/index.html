@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SII | Servicio de Impuestos Internos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/medium_mobile.css" media="screen and (min-width: 380px)">
+    <link rel="stylesheet" href="css/grand_mobile.css" media="screen and (min-width: 480px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 800px)">
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" onclick="onHamburgerClicked()">
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+        </a>
+        <a class="header__logo" href="#"><img src="images/logo.jpg" alt=""></a>
+        <a class="header__profile" onclick="openProfile()"><img src="images/profile.svg" alt=""></a>
+    </header>
+    <a href="#" id="profile__content" class="profile__content">
+        <div>
+            <h2>Ingresar a mi SII</h2>
+        </div>
+    </a>
+
+    <header class="desktop-header">
+        <div class="profile">
+            <a class="profile__button" href="">
+                <div><h2>Ingresar a Mi Sii</h2></div>
+            </a>
+        </div>
+        <div class="desk-header__content">
+            <a class="header__logo" href="#"><img src="images/logo.jpg" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="">Mi Sii</a></li>
+                    <li><a href="">Servicios online</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a id="mobile-nav-back" class="mobile-navigation--back" href="#" onclick="onMobileBackClicked()"><div></div></a>
+    <section id="mobile-nav" class="mobile-navigation">
+        <a class="nav__logo" href="#"><img src="images/logo.jpg" alt=""></a>
+        <form class="form" action="#">
+            <div class="search">
+                <label for="tosearch">
+                    <input id="tosearch" name="search" type="text" placeholder="Buscar">
+                    <img src="images/search.svg" alt="">
+                </label>
+            </div>
+        </form>
+
+        <div class="nav__content">
+            <section id="mobile-nav__main" class="mobile-nav__main">
+                <a class="nav-button" href="#">
+                    <div><h1>Mi SII</h1></div>
+                </a>
+                <a class="nav-button" href="#" onclick="toNavServices()">
+                    <div><h1>Servicios Online</h1><img src="images/right_button.svg" alt=""></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Ayuda</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Contacto</h1><img src="images/right_button.svg" alt=""></div>
+                </a>
+            </section>
+            <section id="mobile-nav__services" class="mobile-nav__services">
+                <div class="mobile-nav__services--header">
+                    <a href="#" onclick="toMainNavMenu()"><img src="images/left_button.svg" alt=""></a>
+                    <h1>Servicios online</h1>
+                </div>
+                <a class="nav-button" href="#">
+                    <div><h1>Clave tributaria y Representantes electrónicos</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>RUT e Inicio de actividades</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Actualización de información</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Peticiones Administrativas y otras Solicitudes</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Autorización de Documentos Tributarios</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Factura electrónica</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Boleta de Ventas y Servicios Electrónica</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Boleta de honorarios electrónicas</h1></div>
+                </a>
+                <a class="nav-button" href="#">
+                    <div><h1>Libros contables electrónicos</h1></div>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <main class="main">
+        <section id="cover-0" class="cover">
+            <div>
+                <h1>Ya puedes acceder a la postergación de las cuotas 3 y 4 de contribuciones</h1>
+                <a class="button" href="#">Más información</a>
+            </div>
+            <img src="images/carousel_1.jpg" alt="">
+            </div>
+        </section>
+        <section id="cover-1" class="cover selected">
+            <div>
+                <h1>Si eres Propyme ya puedes solicitar la devolución de tu remanente de IVA</h1>
+                <a class="button" href="#">Infórmate aquí</a>
+            </div>
+            <img src="images/carousel_2.jpg" alt="">
+        </section>
+        <section id="cover-2" class="cover">
+            <div>
+                <h1>Boleta Electrónica - El nuevo paso en innovación lo damos juntos</h1>
+                <a class="button" href="#">Conoce Más</a>
+            </div>
+            <img src="images/carrusel_3.png" alt="">
+        </section>
+        <section id="cover-3" class="cover">
+            <div>
+                <h1>Entró en vigencia Sobretasa para bienes raíces establecida en la Ley de Modernización Tributaria</h1>
+                <a class="button" href="#">Infórmate aquí</a>
+            </div>
+            <img src="images/carrusel_4.png" alt="">
+        </section>
+        <div class="cover-space">
+            <div class="cover-item selected" onclick="selectCover(0)"></div>
+            <div class="cover-item" onclick="selectCover(1)"></div>
+            <div class="cover-item" onclick="selectCover(2)"></div>
+            <div class="cover-item" onclick="selectCover(3)"></div>
+        </div>
+
+        <section class="section__main__buttons">
+            <a id="apps_button" class="section-button" href="#">
+                <div><h1>APP'S</h1></div>
+            </a>
+
+            <a id="shortcuts" class="section-button" onclick="onShortcutsOpen()">
+                <div><h1>Accesos Directos</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="shortcuts-content" class="section-button__content">
+                <a href="#"><p>Cesión de documentos electrónicos</p></a>
+                <a href="#"><p>Declarar F29</p></a>
+                <a href="#"><p>Emitir Boleta de honorarios electrónica</p></a>
+                <a href="#"><p>Emitir Factura electrónica y DTE</p></a>
+                <a href="#"><p>Pagar Contribuciones</p></a>
+                <a href="#"><p>Registro de Compras y Ventas</p></a>
+                <a href="#"><p>Sobretasa al impuesto territorial</p></a>
+                <a href="#"><p>VAT Portal, Digital Services</p></a>
+            </div>
+
+            <div class="desktop__main__buttons">
+                <div class="section-button">
+                    <h1>Accesos directos</h1>
+                    <div class="section-button__options">
+                        <a href="#"><p>Cesión de documentos electrónicos</p></a>
+                        <a href="#"><p>Declarar F29</p></a>
+                        <a href="#"><p>Emitir Boleta de honorarios electrónica</p></a>
+                        <a href="#"><p>Emitir Factura electrónica y DTE</p></a>
+                        <a href="#"><p>Pagar Contribuciones</p></a>
+                        <a href="#"><p>Registro de Compras y Ventas</p></a>
+                        <a href="#"><p>Sobretasa al impuesto territorial</p></a>
+                        <a href="#"><p>VAT Portal, Digital Services</p></a>
+                    </div>
+                </div>
+                <div class="section-button">
+                    <h1>Ayuda</h1>
+                    <div class="section-button__options">
+                        <a href="#"><p>Formularios</p></a>
+                        <a href="#"><p>Preguntas frecuentes</p></a>
+                        <a href="#"><p>¿Cómo se hace para?</p></a>
+                        <a href="#"><p>Calendario Tributario</p></a>
+                        <a href="#"><p>Oficinas y horarios</p></a>
+                        <a href="#"><p>Mesa de ayuda</p></a>
+                        <a href="#"><p>Ver toda la Ayuda</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="extra" href="#">
+                <img src="images/clave_tributaria.png" alt="">
+            </a>
+
+            <a id="help" class="section-button" onclick="onHelpClicked()">
+                <div><h1>Ayuda</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="help-content" class="section-button__content">
+                <a href="#"><p>Formularios</p></a>
+                <a href="#"><p>Preguntas frecuentes</p></a>
+                <a href="#"><p>¿Cómo se hace para?</p></a>
+                <a href="#"><p>Calendario Tributario</p></a>
+                <a href="#"><p>Oficinas y horarios</p></a>
+                <a href="#"><p>Mesa de ayuda</p></a>
+                <a href="#"><p>Ver toda la Ayuda</p></a>
+            </div>
+
+        </section>
+
+        <section class="important">
+            <h1>Destacados</h1>
+            <a class="important__element" href="#">
+                <div>
+                    <img src="images/important_01.jpg" alt="">
+                    <div>
+                        <p>Portal del emprendedor para Comercio Electrónico</p>
+                        <p>Ver más</p>
+                    </div>
+                </div>
+            </a>
+            <a class="important__element" href="#">
+                <div>
+                    <img src="images/important_02.png" alt="">
+                    <div>
+                        <p>Medidas Tributarias de Apoyo a Personas y Pymes</p>
+                        <p>Ver más</p>
+                    </div>
+                </div>
+            </a>
+            <a class="important__element" href="#">
+                <div>
+                    <img src="images/important_03.jpg" alt="">
+                    <div>
+                        <p>¿Cómo se usaron mis impuestos el año 2019?</p>
+                        <p>Ver más</p>
+                    </div>
+                </div>
+            </a>
+            <a class="button" href="#">Más destacados</a>
+        </section>
+
+        <section class="news">
+            <h1>Noticias</h1>
+            <a class="news__element" href="">
+                <div>
+                    <p>8 de Septiembre de 2020</p>
+                    <p>SII implementa postergación de contribuciones del segundo semestre hasta 2021 para enfrentar la emergencia sanitaria</p>
+                </div>
+            </a>
+            <a class="news__element" href="">
+                <div>
+                    <p>8 de Septiembre de 2020</p>
+                    <p>SII implementa postergación de contribuciones del segundo semestre hasta 2021 para enfrentar la emergencia sanitaria</p>
+                </div>
+            </a>
+            <a class="news__element" href="">
+                <div>
+                    <p>8 de Septiembre de 2020</p>
+                    <p>SII implementa postergación de contribuciones del segundo semestre hasta 2021 para enfrentar la emergencia sanitaria</p>
+                </div>
+            </a>
+            <a class="button" href="#">Más noticias</a>
+        </section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__section">
+            <a id="dates" class="section-button" onclick="onDatesClicked()">
+                <div><h1>Valores y Fechas</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="dates-content" class="section-button__content">
+                <a href="#"><p>UF</p></a>
+                <a href="#"><p>Dólar</p></a>
+                <a href="#"><p>UTM-UTA-IPC</p></a>
+                <a href="#"><p>Datos y valores de Renta</p></a>
+                <a href="#"><p>Datos y valores de IVA</p></a>
+                <a href="#"><p>Otros valores</p></a>
+            </div>
+            <a id="normative" class="section-button" onclick="onNormativeClicked()">
+                <div><h1>Normativa y legislación</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="normative-content" id="dates-content" class="section-button__content">
+                <a href="#"><p>Circulares</p></a>
+                <a href="#"><p>Resoluciones</p></a>
+                <a href="#"><p>Consulta pública de normas</p></a>
+                <a href="#"><p>Administrador de contenido normativo</p></a>
+                <a href="#"><p>Administrador de contenido de Jurisprudencia</p></a>
+                <a href="#"><p>Legislación tributaria y convenios internacionales</p></a>
+                <a href="#"><p>Jurisprudencia y tribunales</p></a>
+            </div>
+            <a id="social" class="section-button" onclick="onSocialClicked()">
+                <div><h1>Redes sociales</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="social-content" id="dates-content" class="section-button__content">
+                <a href="#"><p>Facebook</p></a>
+                <a href="#"><p>Twitter</p></a>
+                <a href="#"><p>Youtube</p></a>
+                <a href="#"><p>RSS</p></a>
+                <a href="#"><p>APP'S</p></a>
+            </div>
+            <a id="interest" class="section-button" onclick="onInterestClicked()">
+                <div><h1>Sitios de interés</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="interest-content" id="dates-content" class="section-button__content">
+                <a href="#"><p>Aplicaciones y documentos</p></a>
+                <a href="#"><p>Web útiles</p></a>
+                <a href="#"><p>Sitios de gobierno relacionados</p></a>
+                <a href="#"><p>Organismos relacionados</p></a>
+                <a href="#"><p>Intercambios de Información - Estándar CRS</p></a>
+            </div>
+            <a id="about" class="section-button" onclick="onAboutClicked()">
+                <div><h1>Sobre el SII</h1><img src="images/down_button.svg" alt=""></div>
+            </a>
+            <div id="about-content" id="dates-content" class="section-button__content">
+                <a href="#"><p>Nuestro Servicio</p></a>
+                <a href="#"><p>Trabaja con nosotros</p></a>
+                <a href="#"><p>Gestión y estadísticas</p></a>
+                <a href="#"><p>CFiT Virtual</p></a>
+                <a href="#"><p>Términos de uso del sitio web</p></a>
+                <a href="#"><p>Recomendaciones de seguridad</p></a>
+            </div>
+
+        </section>
+        <section class="desk-footer">
+            <div class="section-footer">
+                <h1>Valores y fechas</h1>
+                <ul>
+                    <li><a href="">UF</a></li>
+                    <li><a href="">Dólar</a></li>
+                    <li><a href="">UTM-UTA-IPC</a></li>
+                    <li><a href="">Datos y valores de Renta</a></li>
+                    <li><a href="">Datos y valores de IVA</a></li>
+                    <li><a href="">Otros valores</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h1>Normativa y legislación</h1>
+                <ul>
+                    <li><a href="">Circulares</a></li>
+                    <li><a href="">Resoluciones</a></li>
+                    <li><a href="">Consulta pública de normas</a></li>
+                    <li><a href="">Administrador de contenido normativo</a></li>
+                    <li><a href="">Administrador de contenido de Jurisprudencia</a></li>
+                    <li><a href="">Legislación tributaria y convenios internacionales</a></li>
+                    <li><a href="">Jurisprudencia y tribunales</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h1>Redes sociales</h1>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">RSS</a></li>
+                    <li><a href="">APP'S</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h1>Sitios de interés</h1>
+                <ul>
+                    <li><a href="">Aplicaciones y documentos</a></li>
+                    <li><a href="">Web útiles</a></li>
+                    <li><a href="">Sitios de gobierno relacionados</a></li>
+                    <li><a href="">Organismos relacionados</a></li>
+                    <li><a href="">Intercambios de Información - Estándar CRS</a></li>
+                </ul>
+            </div>
+            <div class="section-footer">
+                <h1>Sobre el SII</h1>
+                <ul>
+                    <li><a href="">Nuestro Servicio</a></li>
+                    <li><a href="">Trabaja con nosotros</a></li>
+                    <li><a href="">Gestión y estadísticas</a></li>
+                    <li><a href="">CFiT Virtual</a></li>
+                    <li><a href="">Términos de uso del sitio web</a></li>
+                    <li><a href="">Recomendaciones de seguridad</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

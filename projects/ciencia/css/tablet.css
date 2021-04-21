@@ -1,0 +1,35 @@
+.welcome{
+    font-size: 1.6rem;
+}
+.welcome > h1{
+    font-size: 4rem;
+}
+
+.header{
+    z-index: 10;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.container{
+    padding-top: 60px;
+}
+
+.article{
+    height: 300px;
+}
+
+.subheader{
+    top: 59px;
+}
+
+.section{
+    justify-content: space-around;
+}
+
+.article--mini{
+    max-width: 300px;
+    height: 200px;
+    align-self: center;
+}

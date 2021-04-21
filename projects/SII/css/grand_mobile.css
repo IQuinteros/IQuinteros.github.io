@@ -1,0 +1,49 @@
+.cover{
+    min-height: 550px;
+}
+.cover-space{
+    margin-top: 565px;
+}
+
+.extra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.extra > img{
+    width: 80%;
+    max-width: 460px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.important__element{
+    width: calc(50% - 20px);
+    margin: 20px 10px;
+}
+.important__element > div{
+    border: 1px solid var(--accent-color);
+    max-height: 300px;
+}
+.important__element > div > img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.important__element > div > div{
+    width: 100%;
+    align-items: center;
+}
+.important__element > div > div > p{
+    text-align: center;
+}
+.important > .button{
+    margin: 0 100px;
+    margin-top: 30px;
+}
+
+.news__element > div > p{
+    text-align: center;
+}
+.cover > div > h1{
+    font-size: 2.5rem;
+}

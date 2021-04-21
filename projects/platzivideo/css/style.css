@@ -1,0 +1,340 @@
+/* Ignacio Quinteros Fuentes 2020 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:    'aside main';
+
+}
+
+.expanded{
+    flex-grow: 1;
+}
+
+/* Aside */
+
+.aside{
+    background-color: #151B31;
+    grid-area: aside;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+
+    box-shadow: 3px 0 6px rgba(0, 0, 0, .6);
+}
+
+.logo{
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+.logo--red{
+    color: #DE0C26;
+}
+
+.playlist{
+    margin: 0 0 20px 0;
+}
+.playlist > h1{
+    margin: 0 0 15px 0;
+}
+.playlist__item{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+
+    transition: transform 0.2s;
+}
+.playlist__item > h1{
+   margin: 0 20px 0 0;
+}
+.playlist__item:hover{
+    text-decoration: underline;
+
+    transform: scale(1.05);
+}
+
+.friend-playlist > h1{
+    margin: 0 0 15px 0;
+}
+.friend-playlist__item{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+
+    transition: transform 0.2s;
+}
+.friend-playlist__item > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .4);
+    margin: 0 15px 0 0 ;
+}
+.friend-playlist__item:hover{
+    text-decoration: underline;
+
+    transform: scale(1.05);
+}
+
+/* Main */
+
+.main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-rows: minmax(300px, 40vh) 1fr;
+    grid-template-areas:    'cover'
+                            'content';
+}
+
+/* Cover */
+
+.cover{
+    position: relative;
+}
+.cover > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cover__overlay{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+
+    transition: opacity 0.2s;
+}
+.cover__overlay:hover{
+    opacity: 1;
+}
+.cover__overlay--item{
+    display: block;
+    background-image: url('../images/back.png');
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+
+    transition: transform 0.2s;
+}
+.cover__overlay--item:hover{
+    transform: scale(1.1);
+}
+.cover__overlay--item.back{
+    background-image: url('../images/back.png');
+    position: absolute;
+    top: 0;
+}
+.cover__overlay--item.play{
+    background-image: url('../images/play.png');
+    align-self: center;
+    position: relative;
+}
+.cover__overlay--item.play:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Content */
+
+.content{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 300px);
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    grid-template-areas:    'title title'
+                            'buttons buttons'
+                            'comments suggestions';
+}
+
+/* Title */
+
+.content__title{
+    grid-area: title;
+}
+
+.content__title > h1{
+    font-size: 2.4rem;
+}
+
+.content__title > h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #979797;
+}
+
+/* Buttons */
+
+.content__buttons{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    margin: 10px 0 0 0;
+    padding: 0 0 20px 0;
+    align-items: center;
+    grid-area: buttons;
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+}
+
+.add-to-playlist{
+    background: rgb(254,15,12);
+    background: linear-gradient(90deg, rgba(254,15,12,1) 0%, rgba(255,91,150,1) 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 8px 14px;
+}
+.share{
+    background-color: transparent;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.share > img{
+    margin: 0 0 2px 0;
+    transform: scale(-1, 1);
+}
+.save{
+    background-color: transparent;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.save > img{
+    margin: 0 0 2px 0;
+}
+
+.tag{
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px 5px;
+    min-width: 80px;
+    text-align: center;
+}
+.tag.purple{
+    background-color: #9C57EE;
+}
+.tag.green{
+    background-color: #18E9C2;
+}
+.tag.red{
+    background-color: #D01B1F;
+}
+.tag.pink{
+    background-color: #ED3084;
+}
+
+/* Comments */
+
+.content__comments,
+.content__suggestions{
+    margin: 20px 0 0 0;
+}
+.content__comments > h1{
+    margin: 0 0 10px 0;
+}
+
+.write-comment{
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 5px;
+    border-radius: 8px;
+    border-bottom: 2px solid #E7E7E7;
+    margin: 0 0 15px 0;
+}
+.write-comment > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.write-comment input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0 0 0 10px;
+    flex-grow: 1;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:    'img title'
+                            'img description';
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 15px 5px;
+}
+
+.comment > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    grid-area: img;
+    margin: 0 10px 0 0;
+}
+
+.comment__title{
+    grid-area: title;
+}
+.comment__description{
+    grid-area: description;
+}
+
+/* Suggestions */
+
+.content__suggestions > h1{
+    margin: 0 0 10px 0;
+}
+
+.suggest__article{
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+    margin: 0 0 20px 0;
+}
+
+.suggest__article:hover{
+    transform: scale(1.05);
+}
+
+.suggest__article--img{
+    width: 100%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .6);
+    margin: 0 0 10px 0;
+}

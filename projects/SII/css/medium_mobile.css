@@ -1,0 +1,9 @@
+.cover{
+    min-height: 420px;
+}
+.cover-space{
+    margin-top: 435px;
+}
+.cover > div > h1{
+    font-size: 2rem;
+}

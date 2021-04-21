@@ -1,0 +1,14 @@
+.elem{
+    display: flex;
+}
+.elem > img{
+    height: 100%;
+    display: block;
+    transition: 0.3s;
+}
+.elem2{
+    order: 1;
+}
+.elem > h1{
+    flex-grow: 1;
+}

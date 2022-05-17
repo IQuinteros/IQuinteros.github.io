@@ -53,8 +53,8 @@
     <header class="header">
         <h1 class="welcome">Hola!</h1>
 
-        <h1 class="header__title">Soy Ignacio Alexis Quinteros Fuentes</h1>
-        <h3 class="header__subtitle">Estudiante de Ingeniería Informática</h3>
+        <h1 class="header__title">Ignacio Alexis Quinteros Fuentes</h1>
+        <h3 class="header__subtitle">Estudiante de Ingeniería Informática y Desarrollador de Videojuegos Indie</h3>
     </header>
 
     <main class="main">
@@ -72,9 +72,9 @@
                     <div class="skill__content">
                         <ul>
                             <li>HTML</li>
-                            <li>CSS</li>
+                            <li>CSS - SCSS - SASS</li>
                             <li>JS</li>
-                            <li>PHP</li>
+                            <li>LARAVEL</li>
                             <li>MySQL</li>
                         </ul>
                     </div>
@@ -85,8 +85,18 @@
                     <div class="skill__content">
                         <ul>
                             <li>FLUTTER</li>
-                            <li>BLOC</li>
+                            <li>API REST</li>
                             <li>FIREBASE</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill skill--web">
+                    <i class="fas fa-gamepad skill__icon"></i>
+                    <p class="skill__title">Desarrollo videojuegos</p>
+                    <div class="skill__content">
+                        <ul>
+                            <li>UNREAL ENGINE</li>
+                            <li>MULTIPLAYER</li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +106,32 @@
         </section>
 
         <section class="section portfolio">
-            <h1 class="section__title">Portafolio</h1>
+            <h1 class="section__title">Portafolio Videojuegos</h1>
+
+            <div id="portfolio-container" class="portfolio__container">
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/tictactoe.png');" onclick="openURL('https://youtu.be/D1YI25uvkKo')">
+                    <h3 class="portfolio__item__title">Tic Tac Fight</h3>
+                    <p class="portfolio__item__subtitle">Unreal Engine 4, Blueprints, Mobile</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+                <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/etherlium.png');" onclick="openURL('https://www.youtube.com/watch?v=rntHyugn8Is')">
+                    <h3 class="portfolio__item__title">Etherlium: RTS</h3>
+                    <p class="portfolio__item__subtitle">Unreal Engine 4, C++, Optimización, Desktop</p>
+                    <div class="portfolio__item__bg"></div>
+                </div> 
+                <div class="portfolio__item col-2-tb" style="background-image: url('/assets/images/portfolio/hovertanks.png');" onclick="openURL('https://www.youtube.com/watch?v=pX25xVFmp70')">
+                    <h3 class="portfolio__item__title">Etherlium: AI Arise (WIP)</h3>
+                    <p class="portfolio__item__subtitle">Unreal Engine 4, C++, Multiplayer, PlayFab, API's, Desktop</p>
+                    <div class="portfolio__item__bg"></div>
+                </div>
+            </div>
+
+            <div class="section__background"></div>
+        </section>
+
+
+        <section class="section portfolio">
+            <h1 class="section__title">Portafolio Web</h1>
 
             <div id="portfolio-container" class="portfolio__container">
                 <div class="portfolio__item" style="background-image: url('/assets/images/portfolio/acredify.png');" onclick="openURL('/projects/acredify')">
@@ -173,7 +208,7 @@
     </main>
 
     <footer class="footer">
-        <p>Desarrollado por Ignacio Quinteros - 2020</p>
+        <p>Desarrollado por Ignacio Quinteros - 2022</p>
     </footer>
 
     <div class="header__background"></div>

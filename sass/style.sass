@@ -273,18 +273,24 @@ body
     gap: $margin-unit
     align-items: center
     justify-items: center
-.studies__item > img
+.studies__item > img,
+.contact__item > img
     width: 100%
     filter: brightness(0) invert(1)
 
-.studies__item
+.studies__item,
+.contact__item
     opacity: 0
     animation: fadeIn 1s 4.5s forwards
     padding: $padding-unit
     width: 50%
     transition: transform 0.2s
     max-width: 250px
-.studies__item:hover
+.contact__item
+    width: 20%
+    cursor: pointer
+.studies__item:hover,
+.contact__item:hover
     transform: scale(1.2)
 
 // Footer

@@ -262,7 +262,7 @@ body {
   right: 0;
   z-index: 0;
   opacity: 0.1;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), black);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgb(0, 0, 0));
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -316,12 +316,14 @@ body {
   justify-items: center;
 }
 
-.studies__item > img {
+.studies__item > img,
+.contact__item > img {
   width: 100%;
   filter: brightness(0) invert(1);
 }
 
-.studies__item {
+.studies__item,
+.contact__item {
   opacity: 0;
   animation: fadeIn 1s 4.5s forwards;
   padding: 20px;
@@ -330,7 +332,13 @@ body {
   max-width: 250px;
 }
 
-.studies__item:hover {
+.contact__item {
+  width: 20%;
+  cursor: pointer;
+}
+
+.studies__item:hover,
+.contact__item:hover {
   transform: scale(1.2);
 }
 

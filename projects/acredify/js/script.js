@@ -1,1 +1,0 @@
-swal("Página no oficial", "Esta no es la página de Acredify. Es solo un proyecto de diseño", "info");

@@ -1,0 +1,14 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="48" fill="#0B1627"/>
+  <rect x="28" y="28" width="664" height="844" rx="32" fill="url(#paint0_linear_1_2)" fill-opacity="0.32" stroke="#8FE3FF" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="14 14"/>
+  <circle cx="360" cy="330" r="112" fill="#8FE3FF" fill-opacity="0.18" stroke="#8FE3FF" stroke-width="2"/>
+  <path d="M230 674C230 587.291 300.291 517 387 517H333C419.709 517 490 587.291 490 674V690H230V674Z" fill="#FF7A18" fill-opacity="0.2" stroke="#FFB37A" stroke-width="2"/>
+  <text x="360" y="778" fill="#E6EEF8" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">Tu foto de portada</text>
+  <text x="360" y="826" fill="#9DB0C8" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">Reemplaza este archivo manteniendo el mismo nombre</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="80" y1="90" x2="622" y2="824" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55C7FF"/>
+      <stop offset="1" stop-color="#FF7A18"/>
+    </linearGradient>
+  </defs>
+</svg>

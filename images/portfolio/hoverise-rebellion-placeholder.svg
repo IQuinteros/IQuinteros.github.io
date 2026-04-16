@@ -1,0 +1,17 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="36" fill="#0A1424"/>
+  <rect x="28" y="28" width="1224" height="664" rx="26" fill="url(#paint0_linear_1_2)" fill-opacity="0.25" stroke="#FFB37A" stroke-dasharray="16 16"/>
+  <text x="92" y="146" fill="#FFB37A" font-family="Arial, sans-serif" font-size="28" font-weight="700">HERO SHOT</text>
+  <text x="92" y="246" fill="#E6EEF8" font-family="Arial, sans-serif" font-size="64" font-weight="700">Hoverise Rebellion</text>
+  <text x="92" y="306" fill="#9DB0C8" font-family="Arial, sans-serif" font-size="28">Reemplaza esta imagen manteniendo el mismo archivo</text>
+  <circle cx="1038" cy="240" r="104" fill="#FF7A18" fill-opacity="0.18"/>
+  <rect x="92" y="418" width="420" height="160" rx="24" fill="#07111F" stroke="#55C7FF" stroke-opacity="0.35"/>
+  <text x="132" y="492" fill="#8FE3FF" font-family="Arial, sans-serif" font-size="24">Portada principal del portfolio</text>
+  <text x="132" y="536" fill="#E6EEF8" font-family="Arial, sans-serif" font-size="34" font-weight="700">16:9 recomendado</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="98" y1="86" x2="1195" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A18"/>
+      <stop offset="1" stop-color="#55C7FF"/>
+    </linearGradient>
+  </defs>
+</svg>
